@@ -17,7 +17,7 @@ We're already two-way binding our input values to our controller via `ng-model`,
 
 When we assign a `name` to our form and input elements, Angular begins its magic and gives us access to a lot of useful tools. Why do we validate? So we don't get incorrect data! Whilst we would still validate the data on the server, we can save the user time (and server resources) by validating on the client first. Imagine if we could signup to Facebook with just numbers in our name - it wouldn't make any sense.
 
-Let's take this exampe form:
+Let's take this example form:
 
 ```html
 <form>
@@ -74,7 +74,7 @@ As you can see we get quite a big, detailed object back. What do all of these me
 - `$invalid` - opposite of `$valid`
 - `$error` - an object of all errors that the input is currently failing on
 
-Whilst `$pristine` and `$touched` offer us some cool features, the cor eof the power is in the `$error` and `$valid` items.
+Whilst `$pristine` and `$touched` offer us some cool features, the core of the power is in the `$error` and `$valid` items.
 
 By default, inputs in HTML allow us to set validation rules on them - for instance, required and maxlength.
 
