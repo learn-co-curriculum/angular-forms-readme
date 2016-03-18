@@ -15,7 +15,7 @@ You might've been thinking that Angular didn't have much more to offer - you wer
 
 We're already two-way binding our input values to our controller via `ng-model`, but Angular allows us to take our form integration much, much further.
 
-When we assign a `name` to our form and input elements, Angular begins its magic and gives us access to a lot of useful tools.
+When we assign a `name` to our form and input elements, Angular begins its magic and gives us access to a lot of useful tools. Why do we validate? So we don't get incorrect data! Whilst we would still validate the data on the server, we can save the user time (and server resources) by validating on the client first. Imagine if we could signup to Facebook with just numbers in our name - it wouldn't make any sense.
 
 Let's take this exampe form:
 
@@ -68,8 +68,8 @@ As you can see we get quite a big, detailed object back. What do all of these me
 
 - `$untouched` - this is initially `true`, set to `false` when the user goes in and then out of the input
 - `$touched` - opposite of `$untouched`
-- `$pristine` - this is initially `true`, set to `false` when the user changes the input's value
-- `$dirty` - opposit of `$pristine`
+- `$pristine` - this is initially `true`, set to `false` when the user changes the input's value (the user does not have to go out of the input for this to change)
+- `$dirty` - opposite of `$pristine`
 - `$valid` - if the field's value matches all validation rules applied to it
 - `$invalid` - opposite of `$valid`
 - `$error` - an object of all errors that the input is currently failing on
