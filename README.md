@@ -15,7 +15,7 @@ You might've been thinking that Angular didn't have much more to offer - you wer
 
 We're already two-way binding our input values to our controller via `ng-model`, but Angular allows us to take our form integration much, much further.
 
-When we assign a `name` to our form and input elements, Angular begins its magic and gives us access to a lot of useful tools. Why do we validate? So we don't get incorrect data! Whilst we would still validate the data on the server, we can save the user time (and server resources) by validating on the client first. Imagine if we could signup to Facebook with just numbers in our name - it wouldn't make any sense.
+When we assign a `name` to our form and input elements, Angular begins its magic and gives us access to a lot of useful tools to validate the user input. Why do we validate? So we don't get incorrect data! Whilst we would still validate the data on the server, we can save the user time (and server resources) by validating on the client first. Imagine if we could signup to Facebook with just numbers in our name - it wouldn't make any sense. Angular makes it easy for us to prevent the user from making these types of requests. 
 
 Let's take this example form:
 
