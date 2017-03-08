@@ -111,7 +111,7 @@ $scope.form = {
 
 You can see here that we have an error in our input - it's required, and not filled in! We can see all the individual errors that the input fails on in `$error`, but also get a general value on whether or not our field is valid by looking at `$valid`.
 
-Let's display the error in the view, if the user exists our input and still leaves it blank. We can do this by combining the `$touched` and `$error.required` values.
+Let's display the error in the view, if the user exits our input and still leaves it blank. We can do this by combining the `$touched` and `$error.required` values.
 
 ```html
 <form name="form">
@@ -127,3 +127,5 @@ Let's display the error in the view, if the user exists our input and still leav
 ```
 
 This will display our error if the user goes into our input and then leaves it blank. This is better user experience because it means the error won't immediately be shown when the user loads the page. Simple!
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/angular-forms-readme'>Angular Forms </a> on Learn.co and start learning to code for free.</p>
